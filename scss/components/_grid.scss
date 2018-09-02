@@ -1,0 +1,15 @@
+.container-nav {
+  display: flex;
+  flex: fixed;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: black;
+}
+
+.search {
+  display: flex;
+  background: transparent;
+  align-items: flex-end;
+  width: 400px;
+}

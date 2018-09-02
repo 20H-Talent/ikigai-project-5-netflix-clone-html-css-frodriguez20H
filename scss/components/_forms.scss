@@ -1,0 +1,12 @@
+input[type=search] {
+    background: transparent;
+    color: $color-text-nav;
+    font-family: $font-nav;
+    font-size: 0.7em;
+    font-weight: 300;
+    outline: none;
+    border: none;
+    &::placeholder{
+        font-weight: 300;
+    }
+}
