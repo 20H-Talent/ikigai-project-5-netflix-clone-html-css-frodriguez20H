@@ -17,22 +17,43 @@
 </head>
 
 <body class="debug">
-    <div class="container-nav">
-        <img class="logo" src="img/Logo_Netflix.png">
-        <nav>
-            <ul class="nav-h">
-                <li class="nav__item"><a href="#Home">Home</a></li>
-                <li class="nav__item"><a href="#TVshows">TV shows</a></li>
-                <li class="nav__item"><a href="#Movies">Movies</a></li>
-                <li class="nav__item"><a href="#RecentlyAdded">Recently Added</a></li>
-                <li class="nav__item"><a href="#MyList">My List</a></li>
-            </ul>
-        </nav>
-        <div class="input--with-icon input--medium push-right">
-            <i class="fas fa-search"></i>
-            <input id="search" type="search" placeholder="Titles, people, genres"/>
+    <div class="container">
+        <div class="container-nav">
+            <div class="navigator">
+                <img class="logo" src="img/Logo_Netflix.png">
+                <nav>
+                    <ul class="nav-h">
+                        <li class="nav__item"><a href="#Home">Home</a></li>
+                        <li class="nav__item"><a href="#TVshows">TV shows</a></li>
+                        <li class="nav__item"><a href="#Movies">Movies</a></li>
+                        <li class="nav__item"><a href="#RecentlyAdded">Recently Added</a></li>
+                        <li class="nav__item"><a href="#MyList">My List</a></li>
+                    </ul>
+                </nav>
+                <div class="form-component input--medium push-right box-search">
+                    <div class="input--with-icon">
+                        <i class="fas fa-search"></i>
+                        <input id="search" type="search" placeholder="Titles, people, genres" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="back-cover">
+            <img class="cover" src="img/covers/the-innocents-poster-02.jpg">
+        </div>
+
+        <div class="file-cover--container">
+            <div class="file-cover">
+                <button class="button-cover"><i class="fas fa-play"></i>Play</button>
+                <button class="button-cover"><i class="fas fa-plus"></i>My List</button>
+                <h2 class="header-cover">Text about File</h2>
+                <p class="text-cover">Text about cover </p>
+            </div>
         </div>
     </div>
+
+
 
 </body>
 

@@ -2,11 +2,31 @@ input[type=search] {
     background: transparent;
     color: $color-text-nav;
     font-family: $font-nav;
-    font-size: 0.7em;
+    font-size: 0.9em;
     font-weight: 300;
     outline: none;
     border: none;
     &::placeholder{
         font-weight: 300;
     }
+}
+
+#search {
+    width: 225px;
+}
+
+i.fa-search{
+    color: white;
+    margin-right: 10px;
+}
+
+i.fa-play, i.fa-plus {
+    color: black;
+}
+
+.button-cover {
+    height: 2.5em;
+    width: 135px;
+    margin: auto 3px;
+    padding: auto 10px;
 }

@@ -1,33 +1,22 @@
 .nav-h {
   display: flex;
-  margin-left: 1.5em;
+  margin-left: 2em;
+  width: 100%;
   flex-direction: row;
   flex-wrap: nowrap;
+  justify-content: space-between;
   align-items: center;
 }
 
 .nav__item {
-  display: flex;
   width: auto;
   text-decoration: none;
-  margin-right: 0.9em;
   color: $color-text-nav;
   font-family: $font-nav;
-  font-size: 0.7em;
-  font-size-adjust: initial;
+  font-size: 0.9em;
   align-self: center;
+  margin-right: 0.9em;
   &:hover {
     font-weight: bold;
   }
-}
-
-i {
-  color: $color-text-nav;
-}
-
-.push-right {
-  margin-left: auto;
-  border: 1px solid white;
-  padding: 3px;
-  border-radius: 2px;
 }
