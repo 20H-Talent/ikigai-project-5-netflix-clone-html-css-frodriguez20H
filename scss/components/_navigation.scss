@@ -1,6 +1,6 @@
 .nav-h {
   display: flex;
-  margin-left: 2em;
+  margin-left: 3em;
   width: 100%;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -10,13 +10,42 @@
 
 .nav__item {
   width: auto;
-  text-decoration: none;
-  color: $color-text-nav;
-  font-family: $font-nav;
-  font-size: 0.9em;
   align-self: center;
-  margin-right: 0.9em;
-  &:hover {
-    font-weight: bold;
+  margin-right: 0.6em;
+  & a {
+    text-decoration: none;
+    color: $color-text-nav;
+    font-family: $font-nav;
+    font-size: 0.9em;
+    &:hover {
+      font-weight: bold;
+      &::after {
+        display: block;
+        content: attr(title);
+        font-weight: bold;
+        height: 0;
+        overflow: hidden;
+        visibility: hidden;
+      }
+    }
+  }
+}
+
+progress[value] {
+  /* Reset the default appearance */
+  -webkit-appearance: none;
+  appearance: none;
+
+  width: 132px;
+  height: 4px;
+  margin-top: 6px;
+  &::-moz-progress-bar {
+    background: red;
+  }
+  &::-webkit-progress-value {
+    background: red;
+  }
+  & {
+    color: red;
   }
 }

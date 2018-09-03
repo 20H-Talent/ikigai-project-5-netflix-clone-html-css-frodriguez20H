@@ -1,6 +1,6 @@
 .container {
   display: block;
-  margin: auto 3.5%;
+  margin: auto 4%;
 
 }
 
@@ -8,12 +8,14 @@
   position: fixed;
   height: 68px;
   width: 100%;
-  background-color: black;
+  margin: 1% 4%;
+  background: transparent;
 }
 
 .navigator {
   display: flex;
   flex-direction: row;
+  align-content: center;
   align-items: center;
   // margin: auto 3.5%;
 }
@@ -30,7 +32,8 @@
 .file-cover--container {
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: repeat(4, 120px) 2fr;
+  grid-template-rows: repeat(5, 120px) 2fr;
+  margin-bottom: 1.8%;
 }
 
 .file-cover {
@@ -45,7 +48,39 @@
   padding: 5px;
   height: 2.1em;
 }
+
 .push-right {
-  margin-left: 38.5%;
+  margin-left: 40.1%;
 }
 
+.carousel {
+  margin-bottom: 3.8em;
+}
+
+.carousel-h__cw {
+  margin-bottom: 2.6em;
+}
+
+.carousel-h {
+  margin-bottom: 3.5em;
+
+}
+
+.carousel-container {
+  display:flex;
+  flex-direction: row;
+
+}
+
+.item-carousel {
+  margin-right: 5px;
+}
+
+.item_h-carousel {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-right: 5px;
+
+}
