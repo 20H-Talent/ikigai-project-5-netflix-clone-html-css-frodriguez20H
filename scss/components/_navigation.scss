@@ -18,15 +18,8 @@
     font-family: $font-nav;
     font-size: 0.9em;
     &:hover {
-      font-weight: bold;
-      &::after {
-        display: block;
-        content: attr(title);
-        font-weight: bold;
-        height: 0;
-        overflow: hidden;
-        visibility: hidden;
-      }
+      // font-weight: bold;
+      text-shadow: 0 0 .65px rgb(255, 255, 255), 0 0 .65px rgb(255, 255, 255);
     }
   }
 }
