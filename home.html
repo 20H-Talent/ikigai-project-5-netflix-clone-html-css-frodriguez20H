@@ -17,6 +17,9 @@
 </head>
 
 <body class="debug">
+
+    <!-- ======== Top Nav ======== -->
+
     <div class="container-nav">
         <div class="navigator">
             <img class="logo" src="img/logo-netflix.png">
@@ -37,21 +40,35 @@
             </div>
         </div>
     </div>
+
+    <!-- ======== END Top Nav ======== -->
+
     <div class="container">
+        <!-- Background cover  -->
         <div class="back-cover">
             <img class="cover" src="img/covers/the-innocents-poster-02.jpg">
         </div>
-
+        <!-- END Background cover  -->
+        <!-- ======== File about cover ======== -->
         <div class="file-cover--container">
             <div class="file-cover">
-                <button class="button-cover"><i class="fas fa-play"></i>Play</button>
-                <button class="button-cover"><i class="fas fa-plus"></i>My List</button>
-                <h2 class="header-cover">Text about File</h2>
-                <p class="text-cover">Text about cover </p>
+                <div>
+                    <img class="title-file-cover" src="img/covers/imagen-titulo.png">
+                </div>
+                <div class="buttons-mylist">
+                    <button class="button-cover"><i class="fas fa-play"></i>Play</button>
+                    <button class="button-cover"><i class="fas fa-plus"></i>My List</button>
+                </div>
+                <div class="texts-mylist">
+                    <h2 class="header-cover">Text about File</h2>
+                    <p class="text-cover">Text about cover </p>
+                </div>
             </div>
+            <div class="rectangle"> 13+</div>
         </div>
+        <!-- ======== END File about cover ======== -->
 
-        <!-- ======= Carousle V screens "Netflix Originals" ========= -->
+        <!-- ======= Carousel V screens "Netflix Originals" ========= -->
 
         <div class="carousel">
             <h2 class="title-section">Netflix Originals</h2>
@@ -80,9 +97,9 @@
                 </div>
             </div>
         </div>
-        <!-- ======= End Carousle V screens ========= -->
+        <!-- ======= End Carousel V screens ========= -->
 
-        <!-- ======= Carousle H screens "Continue Watching" ========= -->
+        <!-- ======= Carousel H screens "Continue Watching" ========= -->
         <div class="carousel-h__cw">
             <h2 class="title-section__2">Continue Watching</h2>
             <div class="carousel-container">
@@ -112,8 +129,9 @@
                 </div>
             </div>
         </div>
+        <!-- ======= END Carousle H screens "Continue Watching" ========= -->
 
-        <!-- ======= Carousle H screens "Trending Now" ========= -->
+        <!-- ======= Carousel H screens "Trending Now" ========= -->
 
         <div class="carousel-h">
             <h2 class="title-section__2">Trending Now</h2>
@@ -138,9 +156,9 @@
                 </div>
             </div>
         </div>
+        <!-- ======= END Carousel H screens "Trending Now" ========= -->
 
-        <!-- ======= Carousle H screens "Sci-Fi" ========= -->
-
+        <!-- ======= Carousel H screens "Sci-Fi" ========= -->
         <div class="carousel-h">
             <h2 class="title-section__2">Sci-Fi</h2>
             <div class="carousel-container">
@@ -164,9 +182,9 @@
                 </div>
             </div>
         </div>
+        <!-- ======= END Carousel H screens "Sci-Fi" ========= -->
 
-        <!-- ======= Carousle H screens "Animation" ========= -->
-
+        <!-- ======= Carousel H screens "Animation" ========= -->
         <div class="carousel-h">
             <h2 class="title-section__2">Animation</h2>
             <div class="carousel-container">
@@ -190,9 +208,9 @@
                 </div>
             </div>
         </div>
+        <!-- ======= END Carousel H screens "Animation" ========= -->
 
-        <!-- ======= Carousle H screens "Kids" ========= -->
-
+        <!-- ======= Carousel H screens "Kids" ========= -->
         <div class="carousel-h">
             <h2 class="title-section__2">Kids</h2>
             <div class="carousel-container">
@@ -216,13 +234,53 @@
                 </div>
             </div>
         </div>
+        <!-- ======= END Carousel H screens "Kids" ========= -->
 
-        <footer>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="icos-rss">
+                    <img src="img/icos/facebook-official.svg">
+                    <img src="img/icos/instagram.svg">
+                    <img src="img/icos/twitter.svg">
+                    <img src="img/icos/youtube-play.svg">
+                </div>
+                <div class="footer-list_1">
+                    <ul class="footer-ul">
+                        <li class="footer-li"><a href="#about">About this project</a></li>
+                        <li class="footer-li"><a href="#media">Media Center</a></li>
+                        <li class="footer-li"><a href="#privacy">Privacy</a></li>
+                        <li class="footer-li"><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-list_2">
+                    <ul>
+                        <li class="footer-li"><a href="#mostviewed">Most viewed</a></li>
+                        <li class="footer-li"><a href="#lastrelease">Last Releases</a></li>
+                        <li class="footer-li"><a href="#myfavorites">My Favorites</a></li>
+                    </ul>
+                </div>
+                <div class="footer-list_3">
+                    <ul>
+                        <li class="footer-li"><a href="#scifi">Sci-Fi</a></li>
+                        <li class="footer-li"><a href="#animation">Animation</a></li>
+                        <li class="footer-li"><a href="#kids">Kids</a></li>
+                    </ul>
+                </div>
+                <div class="footer-list_4">
+                    <ul>
+                        <li class="footer-li"><a href="#trending">Trending Now</a></li>
+                        <li class="footer-li"><a href="#continuewatching">Continue Watching</a></li>
+                    </ul>
+                </div>
+                <div class="copy-container"> 
+                    <small class="copyright">&copy; 2018 Netflix inc.</small>
+                </div>
+            </div>
 
         </footer>
 
     </div>
-    
+
 </body>
 
 </html>

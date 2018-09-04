@@ -35,7 +35,7 @@ progress[value] {
   /* Reset the default appearance */
   -webkit-appearance: none;
   appearance: none;
-
+  border: none;
   width: 132px;
   height: 4px;
   margin-top: 6px;
@@ -48,4 +48,18 @@ progress[value] {
   & {
     color: red;
   }
+}
+
+.footer-ul{
+  display:flex;
+  flex-direction: column;
+  align-content: space-around;
+  justify-content: space-between;
+  
+}
+
+.footer-li {
+  @extend %fontwhite;
+  font-size: 0.8em;
+  margin-bottom: 1.3em;
 }

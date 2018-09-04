@@ -1,7 +1,6 @@
 .container {
   display: block;
   margin: auto 4%;
-
 }
 
 .container-nav {
@@ -20,6 +19,14 @@
   // margin: auto 3.5%;
 }
 
+.box-search {
+  display: flex;
+  align-items: center;
+  border: 1px solid white;
+  padding: 5px;
+  height: 2.1em;
+}
+
 .back-cover {
   position: absolute;
   left: 0px;
@@ -31,22 +38,39 @@
 
 .file-cover--container {
   display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: repeat(5, 120px) 2fr;
+  grid-template-columns: auto auto;
+  grid-template-rows: 50px repeat(2, 202.54px) 142px;
   margin-bottom: 1.8%;
 }
 
 .file-cover {
-  grid-row-start: 4;
-
+  grid-row-start: 3;
+  display: flex;
+  flex-direction: column;
 }
 
-.box-search {
+.texts-mylist {
+  margin-top: 1.1em;
+}
+
+.rectangle {
+  @extend %fontwhite;
+  grid-column: 2;
+  grid-row: 4;
+  font-weight: bold;
+  width: 97px;
+  height: 32px;
+  background-color: #252928;
+  justify-self: end;
+  align-self: center;
+  overflow: visible;
+  border-left: 3px solid white;
+  padding-left: 0.7em;
   display: flex;
   align-items: center;
-  border: 1px solid white;
-  padding: 5px;
-  height: 2.1em;
+  position: relative;
+  right: -60px;
+  top: -5px;
 }
 
 .push-right {
@@ -63,13 +87,11 @@
 
 .carousel-h {
   margin-bottom: 3.5em;
-
 }
 
 .carousel-container {
-  display:flex;
+  display: flex;
   flex-direction: row;
-
 }
 
 .item-carousel {
@@ -82,5 +104,38 @@
   flex-wrap: nowrap;
   align-items: center;
   margin-right: 5px;
+}
 
+.footer {
+  display: flex;
+  justify-content: center;
+  &-container{
+    margin-top: 5.65em;
+    position: relative;
+    right: 68px;
+    display: grid;
+    grid-template-rows: 30px 170px 250px;    grid-template-columns: repeat(3, 192px);
+    grid-column-gap: 52px;
+    grid-row-gap: 15px;
+  }
+  &-list{
+    @for $i from 1 through 4 {
+      &_#{$i}{
+        grid-column-start: #{$i};
+        grid-row-start: 2;
+      }
+    }
+  }
+
+}
+
+.icos-rss {
+  display:flex;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.copy-container{
+  grid-column-start: 1;
+  grid-row-start: 3;
 }

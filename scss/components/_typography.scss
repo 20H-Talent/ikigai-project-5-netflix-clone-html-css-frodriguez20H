@@ -6,7 +6,7 @@
   color: white;
   font-size: 1.5em;
   font-weight: bold;
-  margin: 0.5em auto;
+  margin-bottom:  0.3em;
 }
 
 .text-cover {
@@ -30,4 +30,12 @@
   font-size: 1.2em;
   font-weight: bold;
   margin-bottom: 0.55em;
+}
+
+.icos-rss{
+  color:white;
+}
+
+.copyright{
+  @extend %fontwhite;
 }
