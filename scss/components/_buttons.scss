@@ -1,12 +1,11 @@
-i.fa-search{
-    color: white;
-    margin-right: 10px;
-}
-
 i.fa-play, i.fa-plus {
     color:white;
     margin-right: 10px;
+    &:hover{
+        color:black;
+    }
 }
+
 .button-mylist {
 
 }
@@ -21,4 +20,11 @@ i.fa-play, i.fa-plus {
     background-color: black;
     color: white;
     opacity: 0.7;
+    &:hover {
+        background-color: white;
+        color: black;
+        & > i {
+            color:black;
+        }
+    }
 }

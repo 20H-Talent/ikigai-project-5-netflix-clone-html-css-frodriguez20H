@@ -1,4 +1,11 @@
 %fontwhite {
-    color: $color-text-nav;
-    font-family: $font-nav;  
+  color: $color-text-nav;
+  font-family: $font-nav;
+}
+%alltrans {
+  -webkit-transition: all 0.55s ease;
+  -moz-transition: all 0.55s ease;
+  -ms-transition: all 0.55s ease;
+  -o-transition: all 0.55s ease;
+  transition: all 0.55s ease;
 }
