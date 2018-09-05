@@ -9,3 +9,9 @@
   -o-transition: all 0.55s ease;
   transition: all 0.55s ease;
 }
+
+%flexcenterall {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}

@@ -5,6 +5,8 @@
 
 .container-nav {
   position: fixed;
+  display: flex;
+  flex-direction: row;
   top: inherit;
   height: 68px;
   width: 100%;
@@ -21,10 +23,8 @@
 .navigator {
   position: relative;
   display: flex;
-  flex-direction: row;
-  align-content: center;
   align-items: center;
-  // margin: auto 3.5%;
+  width: 100%;
 }
 
 .box-search{
@@ -59,8 +59,12 @@
   flex-direction: column;
 }
 
+.buttons-mylist {
+
+}
+
 .texts-mylist {
-  margin-top: 1.1em;
+  margin-top: 1em;
 }
 
 .rectangle {
@@ -84,7 +88,7 @@
 }
 
 .push-right {
-  margin-left: 40.7%;
+  margin-left: auto;
 }
 
 .carousel {
@@ -105,7 +109,42 @@
 }
 
 .item-carousel {
+  position: relative;
   margin-right: 5px;
+  overflow: hidden;
+  &:hover .container-summary{  // show text inside item-carousel
+    -moz-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.container-summary {
+  @extend %fontwhite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  flex-direction: column;
+  justify-content: flex-end;
+  display: flex;
+  height: 100%;
+  padding: 0 0.3em 1.4em 0.8em;
+  background-color: rgba(0,0,0,0.6);
+  @extend %alltrans;
+  -moz-transform: translateY(100%);
+	-webkit-transform: translateY(100%);
+	-ms-transform: translateY(100%);
+  transform: translateY(100%);
+  opacity:0;
+  transition: 1s;
+
+}
+
+.data-summary {
+  display:flex;
+  font-size: 0.89em;
 }
 
 .item_h-carousel {

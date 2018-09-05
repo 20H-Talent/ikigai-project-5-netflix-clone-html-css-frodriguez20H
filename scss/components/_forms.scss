@@ -24,11 +24,11 @@
 i.fa-search {
   font-size: 18px;
   color: white;
-  margin-left: 10px;
+  margin-left: 8px;
 }
 
 .container-2 {
-  width: 300px;
+  width: 270px;
   display: flex;
   align-items: center;
   white-space: nowrap;
@@ -42,7 +42,7 @@ i.fa-search {
 .container-2 input#search {
   display: block;
   width: 0px;
-  height: 40px;
+  height: 36px;
   border: none;
   font-size: 0.8em;
   background: transparent;
@@ -77,13 +77,13 @@ i.fa-search {
 
 .container-2 input#search:focus,
 .container-2 input#search:active {
-  padding-left: 35px;
+  // padding-left: 35px;
   margin-left: 10px;
   width: 300px;
 }
 
 .container-2:hover input#search {
-  padding-left: 35px;
+  // padding-left: 35px;
   margin-left: 10px;
   width: 300px;
 }

@@ -1,40 +1,64 @@
-i.fa-play {
-    color: white;
-    margin-right: 0px;
-    position: relative;
-    right: 11px;
-    &:hover{
-        color:black;
-    }
+.play > i.fa-play {
+  color: white;
+  margin-right: 10px;
+  position: relative;
+  right: 2px;
+  top: -2px;
+  &:hover {
+    color: black;
+  }
 }
 
-i.fa-plus {
-    color: white;
-    margin-right: 18px;
-    position: relative;
-    right: -5px;
-    top: 1px;
-    &:hover{
-        color:black;
-    }
+.mylist > i.fa-plus {
+  color: white;
+  margin-right: 16px;
+  position: relative;
+  right: -3px;
+  &:hover {
+    color: black;
+  }
 }
-
 
 .button-cover {
-    @extend %fontwhite;
-    border: none;
-    height: 2.5em;
-    width: 135px;
-    margin: auto 3px;
-    padding-top: 4px;
-    background-color: black;
-    color: white;
-    opacity: 0.7;
-    &:hover {
-        background-color: white;
-        color: black;
-        & > i {
-            color:black;
-        }
+  @extend %fontwhite;
+  border: none;
+  height: 2.5em;
+  width: 135px;
+  border-radius: 5px;
+  padding: 0;
+  margin-right: 0.4em;
+  background-color: black;
+  color: white;
+  opacity: 0.7;
+  &:hover {
+    background-color: white;
+    color: black;
+    & > i {
+      color: black;
     }
+  }
+  &.play {
+    width: 130px;
+  }
+  &.mylist {
+    width: 155px;
+  }
+}
+
+.btn-play {
+  width: 35px;
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 35px;
+  border-radius: 40px;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0.2em;
+  margin-bottom: 0.3em;
+  & > .fa-play {
+    color: red;
+    display: flex;
+    align-self: center;
+  }
 }
