@@ -46,16 +46,17 @@
 }
 
 .btn-play {
-  width: 35px;
+  width: 2em;
   background-color: rgba(0, 0, 0, 0.8);
-  height: 35px;
-  border-radius: 40px;
+  height: 2em;
+  border-radius: 2em;
+  font-size: 1em;
   border: 1px solid white;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-left: 0.2em;
-  margin-bottom: 0.3em;
+  margin-bottom: 0.4em;
   & > .fa-play {
     color: red;
     display: flex;

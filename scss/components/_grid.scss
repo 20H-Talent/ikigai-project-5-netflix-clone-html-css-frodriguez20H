@@ -42,7 +42,7 @@
   left: 0px;
   top: 0px;
   z-index: -1;
-  height: 800px;
+  height: 50em;
   overflow: hidden;
 }
 
@@ -72,8 +72,8 @@
   grid-column: 2;
   grid-row: 4;
   font-weight: bold;
-  width: 97px;
-  height: 32px;
+  width: 6em;
+  height: 2em;
   background-color: #252928;
   justify-self: end;
   align-self: center;
@@ -148,11 +148,22 @@
 }
 
 .item_h-carousel {
+  @extend %fontwhite;
+  font-size: 0.6em;
+  position: relative;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: center;
   margin-right: 5px;
+  overflow: hidden;
+  &:hover .container-summary{  // show text inside item-carousel
+    -moz-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .footer {
@@ -161,12 +172,12 @@
   &-container {
     margin-top: 5.65em;
     position: relative;
-    right: 68px;
+    right: 4.29em;
     display: grid;
-    grid-template-rows: 30px 170px 250px;
-    grid-template-columns: repeat(3, 192px);
-    grid-column-gap: 52px;
-    grid-row-gap: 15px;
+    grid-template-rows: 1.89em 10.6em 3.1em;
+    grid-template-columns: repeat(3, 12em);
+    grid-column-gap: 3.25em;
+    grid-row-gap: 0.96em;
   }
   &-list {
     @for $i from 1 through 4 {
