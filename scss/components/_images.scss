@@ -11,6 +11,15 @@
   width: 100vw;
 }
 
+.back-cover {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 0;
+  height: 50em;
+  overflow: hidden;
+}
+
 i {
   color: black;
 }
