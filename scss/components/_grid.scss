@@ -12,7 +12,7 @@
   width: 100%;
   padding: 1% 4%;
   background: black;
-  opacity:0.6;
+  opacity: 0.6;
   z-index: 999;
   -webkit-backface-visibility: hidden;
   &:hover {
@@ -27,14 +27,14 @@
   width: 100%;
 }
 
-.box-search{
+.box-search {
   display: flex;
   padding: 5px;
   height: 2.1em;
   align-items: center;
-  &:hover{
+  &:hover {
     border: 1px solid white;
-  } 
+  }
 }
 
 .back-cover {
@@ -60,7 +60,6 @@
 }
 
 .buttons-mylist {
-
 }
 
 .texts-mylist {
@@ -106,18 +105,34 @@
 .carousel-container {
   display: flex;
   flex-direction: row;
+  animation: marquee 10s linear infinite;
+  width: 200%;
+  &:hover {
+    animation-play-state: paused;
+  }
 }
 
 .item-carousel {
   position: relative;
   margin-right: 5px;
   overflow: hidden;
-  &:hover .container-summary{  // show text inside item-carousel
+  transition: all 0.2s ease;
+  &:hover .container-summary {
+    // show text inside item-carousel
     -moz-transform: translateY(0);
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-40%);
   }
 }
 
@@ -131,19 +146,18 @@
   display: flex;
   height: 100%;
   padding: 0 0.3em 1.4em 0.8em;
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(0, 0, 0, 0.6);
   @extend %alltrans;
   -moz-transform: translateY(100%);
-	-webkit-transform: translateY(100%);
-	-ms-transform: translateY(100%);
+  -webkit-transform: translateY(100%);
+  -ms-transform: translateY(100%);
   transform: translateY(100%);
-  opacity:0;
+  opacity: 0;
   transition: 1s;
-
 }
 
 .data-summary {
-  display:flex;
+  display: flex;
   font-size: 0.89em;
 }
 
@@ -157,7 +171,8 @@
   align-items: center;
   margin-right: 5px;
   overflow: hidden;
-  &:hover .container-summary{  // show text inside item-carousel
+  &:hover .container-summary {
+    // show text inside item-carousel
     -moz-transform: translateY(0);
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
