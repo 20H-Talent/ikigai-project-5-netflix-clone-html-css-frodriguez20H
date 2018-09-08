@@ -101,7 +101,8 @@
 
 .carousel {
   margin-bottom: 3.8em;
-  width: 2664px; // Main container need total space ((img + margin) * nº imgs)
+  width: 2664px;
+  z-index: 10; // Main container need total space ((img + margin) * nº imgs)
 }
 
 .carousel-h__cw { 
@@ -117,7 +118,7 @@
 .carousel-container {
   display: flex;
   flex-direction: row;
-  animation: marquee 20s linear infinite;
+  animation: marquee 30s linear infinite;
   &:hover {
     animation-play-state: paused;
   }
