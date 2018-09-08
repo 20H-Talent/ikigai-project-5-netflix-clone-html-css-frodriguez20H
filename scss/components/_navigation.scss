@@ -59,4 +59,7 @@ progress[value] {
   @extend %fontwhite;
   font-size: 0.8em;
   margin-bottom: 1.3em;
+  &:hover{
+    text-decoration: underline;
+  }
 }
