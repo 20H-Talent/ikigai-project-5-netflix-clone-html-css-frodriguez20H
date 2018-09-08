@@ -28,13 +28,12 @@
 
 .container-search {
   display: block;
-  @extend .container;
   margin-top: 9em;
 
 }
 
 .main-container {
-  margin-bottom: 4em;
+  margin-bottom: 4.4em;
 }
 
 .navigator {
@@ -111,7 +110,7 @@
 }
 
 .carousel-h {
-  margin-bottom: 3.5em;
+  margin-bottom: 3.3em;
   width: 2873px; // Main container need total space ((img + margin) * nº imgs)
 }
 
