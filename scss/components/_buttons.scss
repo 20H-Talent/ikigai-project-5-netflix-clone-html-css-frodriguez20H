@@ -23,7 +23,7 @@
   @extend %fontwhite;
   border: none;
   height: 2.5em;
-  width: 135px;
+  width: 8.4em;
   border-radius: 5px;
   padding: 0;
   margin-right: 0.4em;
@@ -63,5 +63,17 @@
     align-self: center;
     font-size: 0.8em;
     margin-left: 0.3em;
+  }
+}
+
+.btn-return {
+  position: fixed;
+  width: 3em;
+  height: 3em;
+  margin: 2em;
+  display: float;
+  z-index: 999;
+  & > i.far {
+      color: white;
   }
 }
