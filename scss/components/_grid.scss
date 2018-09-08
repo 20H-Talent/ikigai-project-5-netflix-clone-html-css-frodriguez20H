@@ -20,6 +20,23 @@
   }
 }
 
+.head-search {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.container-search {
+  display: block;
+  @extend .container;
+  margin-top: 9em;
+
+}
+
+.main-container {
+  margin-bottom: 4em;
+}
+
 .navigator {
   position: relative;
   display: flex;
@@ -51,8 +68,8 @@
   z-index: 5;
 }
 
-.buttons-mylist {
-}
+// .buttons-mylist {
+// }
 
 .texts-mylist {
   margin-top: 1em;
