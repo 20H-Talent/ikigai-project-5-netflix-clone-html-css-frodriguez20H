@@ -15,8 +15,8 @@
   opacity: 0.6;
   z-index: 999;
   -webkit-backface-visibility: hidden;
-  &:hover {
-    opacity: 1;
+  &:hover, &:active, &:focus { 
+    opacity: 1;    
   }
 }
 
