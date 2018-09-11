@@ -101,23 +101,31 @@
 
 .carousel {
   margin-bottom: 3.8em;
-  width: 2664px;
+  overflow: hidden;
+  width: 100vw;
+  position: relative;
+  left: -4%;
+  // width: 2664px;
   z-index: 10; // Main container need total space ((img + margin) * nº imgs)
 }
 
 .carousel-h__cw { 
   margin-bottom: 2.6em;
-  width: 2873px; // Main container need total space ((img + margin) * nº imgs)
+  overflow: hidden;
+  // width: 2873px; // Main container need total space ((img + margin) * nº imgs)
 }
 
 .carousel-h {
   margin-bottom: 3.3em;
-  width: 2873px; // Main container need total space ((img + margin) * nº imgs)
+  overflow: hidden;
+  // width: 2873px; // Main container need total space ((img + margin) * nº imgs)
 }
 
 .carousel-container {
   display: flex;
   flex-direction: row;
+  overflow-y: hidden;
+  width: 2664px;
   animation: marquee 30s linear infinite;
   &:hover {
     animation-play-state: paused;
