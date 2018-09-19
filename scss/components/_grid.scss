@@ -15,8 +15,10 @@
   opacity: 0.6;
   z-index: 999;
   -webkit-backface-visibility: hidden;
-  &:hover, &:active, &:focus { 
-    opacity: 1;    
+  &:hover,
+  &:active,
+  &:focus {
+    opacity: 1;
   }
 }
 
@@ -29,7 +31,6 @@
 .container-search {
   display: block;
   margin-top: 9em;
-
 }
 
 .main-container {
@@ -109,7 +110,7 @@
   z-index: 10; // Main container need total space ((img + margin) * nº imgs)
 }
 
-.carousel-h__cw { 
+.carousel-h__cw {
   margin-bottom: 2.6em;
   width: 100vw;
   overflow: hidden;
@@ -128,13 +129,16 @@
 .carousel-container {
   display: flex;
   flex-direction: row;
-  overflow-y: hidden;
-  overflow-x: visible;
-  -moz-scrollbars: none;
+  @if (-moz-scrollbars-none){
+      overflow-x: scroll;
+    }
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: scroll;
+  -webkit-overflow-scrolling: touch;
   // width: 2664px;
   animation: marquee 30s linear infinite;
-  &::-webkit-scrollbar { 
-    display: none; 
+  &::-webkit-scrollbar {
+    display: none;
   }
   &:hover {
     animation-play-state: paused;
