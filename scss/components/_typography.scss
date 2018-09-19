@@ -72,3 +72,11 @@
 .copyright {
   @extend %fontwhite;
 }
+
+.plus {
+  color: $color-text-nav;
+  position: relative;
+  top: -20px;
+  right: 0px;
+  align-self: flex-end;
+}

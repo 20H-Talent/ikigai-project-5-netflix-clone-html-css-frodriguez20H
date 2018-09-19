@@ -953,6 +953,14 @@ progress[value] {
   color: white;
 }
 
+.plus {
+  color: white;
+  position: relative;
+  top: -20px;
+  right: 0px;
+  align-self: flex-end;
+}
+
 .fullscreen:-webkit-full-screen {
   width: 100vw;
   height: 100vh;
