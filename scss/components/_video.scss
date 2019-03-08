@@ -1,0 +1,71 @@
+.fullscreen:-webkit-full-screen {
+  width: 100vw;
+  height: 100vh;
+}
+
+.fullscreen:-moz-full-screen {
+  width: 100vw;
+  height: 100vh;
+}
+
+.fullscreen:-ms-fullscreen {
+  width: 100vw;
+  height: 100vh;
+}
+
+.fullscreen:fullscreen {
+  width: 100vw;
+  height: 100vh;
+}
+
+figure:-webkit-full-screen figcaption {
+  display: none;
+}
+
+figure:-moz-full-screen figcaption {
+  display: none;
+}
+
+figure:-ms-fullscreen figcaption {
+  display: none;
+}
+
+figure:fullscreen figcaption {
+  display: none;
+}
+
+:-webkit-full-screen .footnotes {
+  display: none;
+}
+
+:-moz-full-screen .footnotes {
+  display: none;
+}
+
+:-ms-fullscreen .footnotes {
+  display: none;
+}
+
+:fullscreen .footnotes {
+  display: none;
+}
+
+.videoContainer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+iframe {
+    /* optional */
+    width: 100%;
+    height: 100%; 
+  }

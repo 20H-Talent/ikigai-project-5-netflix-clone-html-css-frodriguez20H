@@ -1,0 +1,65 @@
+.nav-h {
+  display: flex;
+  margin-left: 3em;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__item {
+  width: auto;
+  align-self: center;
+  margin-right: 0.5em;
+  opacity: 0.6;
+  & a {
+    text-decoration: none;
+    color: $color-text-nav;
+    font-family: $font-nav;
+    font-size: 0.9em;
+    &:hover {
+      // font-weight: bold;
+      text-shadow: 0 0 .65px rgb(255, 255, 255), 0 0 .65px rgb(255, 255, 255);
+    }
+  }
+  &:hover {
+    opacity: 1;
+  }
+}
+
+progress[value] {
+  /* Reset the default appearance */
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  width: 132px;
+  height: 4px;
+  margin-top: 6px;
+  &::-moz-progress-bar {
+    background: red;
+  }
+  &::-webkit-progress-value {
+    background: red;
+  }
+  & {
+    color: red;
+  }
+}
+
+.footer-ul{
+  display:flex;
+  flex-direction: column;
+  align-content: space-around;
+  justify-content: space-between;
+  
+}
+
+.footer-li {
+  @extend %fontwhite;
+  font-size: 0.8em;
+  margin-bottom: 1.3em;
+  &:hover{
+    text-decoration: underline;
+  }
+}

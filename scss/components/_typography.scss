@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:300,400,700");
+@import url("https://use.fontawesome.com/releases/v5.2.0/css/all.css");
+
+.header-cover {
+  font-family: $font-nav;
+  color: white;
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-bottom: 0.2em;
+  letter-spacing: 0.2px;
+}
+
+.text-cover {
+  color: white;
+  font-family: $font-nav;
+  font-size: 1.25em;
+  line-height: 1.25em;
+}
+
+.title-section {
+  font-family: $font-nav;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 0.6em;
+  letter-spacing: 0.04em;
+  margin-left: 2.8em;
+}
+
+.title-section__2 {
+  font-family: $font-nav;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 0.55em;
+  letter-spacing: 0.03em;
+  margin-left: 2.8em;
+}
+
+.txt-summary {
+  @extend %fontwhite;
+  line-height: 1.3em;
+}
+
+.rate {
+  border: 1px solid white;
+  margin: 0 0.5em;
+  width: 2.5em;
+  @extend %flexcenterall;
+}
+
+.h5-summary {
+  font-size: 1em;
+  margin-bottom: 0.5em;
+}
+
+.txt {
+  font-size: 0.9em;
+  line-height: 1.25em;
+}
+
+.match {
+  color: green;
+  font-weight: bold;
+}
+
+.icos-rss {
+  color: white;
+}
+
+.copyright {
+  @extend %fontwhite;
+}
+
+.plus {
+  color: $color-text-nav;
+  position: relative;
+  top: -20px;
+  right: 0px;
+  align-self: flex-end;
+}
